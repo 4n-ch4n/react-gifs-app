@@ -5,7 +5,7 @@ import { CustomHeader } from './shared/components/CustomHeader';
 import { SearchBar } from './shared/components/SearchBar';
 
 export const GifsApp = () => {
-  const { gifs, previousTerms, handelTermClick, handleSearch } = useGifs();
+  const { gifs, previousTerms, handleTermClick, handleSearch } = useGifs();
 
   return (
     <>
@@ -18,7 +18,7 @@ export const GifsApp = () => {
 
       <PreviousSearches
         searches={previousTerms}
-        onLabelClicked={handelTermClick}
+        onLabelClicked={handleTermClick}
       />
 
       <GifList gifs={gifs} />
